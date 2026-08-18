@@ -1,69 +1,261 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
+
+const services = [
+  {
+    icon: "🪪",
+    title: "Aadhaar Services",
+    text: "Aadhaar related online services and assistance.",
+  },
+  {
+    icon: "💳",
+    title: "PAN Card",
+    text: "New PAN application, correction and related services.",
+  },
+  {
+    icon: "📄",
+    title: "Online Forms",
+    text: "Admission, vacancy, scholarship and other online forms.",
+  },
+  {
+    icon: "🏠",
+    title: "Government Services",
+    text: "Online assistance for various government services.",
+  },
+  {
+    icon: "🚆",
+    title: "Railway Services",
+    text: "Railway ticket and other online travel assistance.",
+  },
+  {
+    icon: "💡",
+    title: "Bill Payment",
+    text: "Convenient online bill payment assistance.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="home-page">
+
+      {/* HERO */}
+      <section className="hero-section">
+        <div className="hero-content">
+
+          <div className="hero-badge">
+            ⚡ DIGITAL SERVICES • ONLINE SOLUTIONS
+          </div>
+
+          <h1>
+            Welcome to{" "}
+            <span>Shivam Online Hub</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="hero-text">
+            Your trusted <strong>Jan Suvidha Kendra</strong> for
+            online forms, government services, digital solutions
+            and much more.
+          </p>
+
+          <div className="hero-buttons">
+            <Link href="/services" className="primary-btn">
+              Explore Services →
+            </Link>
+
+            <Link href="/contact" className="secondary-btn">
+              Contact Us
+            </Link>
+          </div>
+
+          <div className="hero-stats">
+            <div>
+              <strong>50+</strong>
+              <span>Services</span>
+            </div>
+
+            <div>
+              <strong>1000+</strong>
+              <span>Applications</span>
+            </div>
+
+            <div>
+              <strong>24/7</strong>
+              <span>Digital Support</span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* HERO VISUAL */}
+        <div className="hero-visual">
+
+          <div className="floating-card card-one">
+            🪪
+            <div>
+              <strong>Aadhaar</strong>
+              <small>Digital Services</small>
+            </div>
+          </div>
+
+          <div className="floating-card card-two">
+            📄
+            <div>
+              <strong>Online Forms</strong>
+              <small>Fast & Easy</small>
+            </div>
+          </div>
+
+          <div className="floating-card card-three">
+            💻
+            <div>
+              <strong>Digital Hub</strong>
+              <small>Smart Solutions</small>
+            </div>
+          </div>
+
+          <div className="hero-orb">
+            <div className="orb-inner">
+              <img
+                src="/logo.png"
+                alt="Shivam Online Hub"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* SERVICES */}
+      <section className="home-services">
+
+        <div className="section-heading">
+          <span>WHAT WE OFFER</span>
+
+          <h2>
+            Our <strong>Popular Services</strong>
+          </h2>
+
+          <p>
+            सभी जरूरी online और digital services एक ही जगह।
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="home-service-grid">
+
+          {services.map((service) => (
+            <div
+              className="home-service-card"
+              key={service.title}
+            >
+              <div className="service-icon">
+                {service.icon}
+              </div>
+
+              <h3>{service.title}</h3>
+
+              <p>{service.text}</p>
+
+              <Link href="/services">
+                Learn More →
+              </Link>
+            </div>
+          ))}
+
         </div>
-      </main>
-    </div>
+
+        <div className="services-button">
+          <Link href="/services" className="primary-btn">
+            View All Services →
+          </Link>
+        </div>
+
+      </section>
+
+
+      {/* WHY US */}
+      <section className="why-home">
+
+        <div className="section-heading">
+          <span>WHY SHIVAM ONLINE HUB</span>
+
+          <h2>
+            Simple. Fast. <strong>Reliable.</strong>
+          </h2>
+        </div>
+
+        <div className="why-home-grid">
+
+          <div className="why-home-card">
+            <div>⚡</div>
+            <h3>Fast Service</h3>
+            <p>
+              Online applications और digital काम
+              को आसान और fast बनाने की कोशिश।
+            </p>
+          </div>
+
+          <div className="why-home-card">
+            <div>🔒</div>
+            <h3>Secure Process</h3>
+            <p>
+              आपके documents और information को
+              जिम्मेदारी के साथ handle किया जाता है।
+            </p>
+          </div>
+
+          <div className="why-home-card">
+            <div>🤝</div>
+            <h3>Trusted Support</h3>
+            <p>
+              किसी भी online service में सहायता के
+              लिए आसान और friendly support।
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* CTA */}
+      <section className="home-cta">
+
+        <div>
+          <span>NEED ONLINE SERVICE?</span>
+
+          <h2>
+            हम आपके online काम को
+            <strong> आसान बनाते हैं।</strong>
+          </h2>
+
+          <p>
+            आज ही Shivam Online Hub से संपर्क करें।
+          </p>
+        </div>
+
+        <Link href="/contact" className="primary-btn">
+          Get In Touch →
+        </Link>
+
+      </section>
+
+
+      {/* FOOTER */}
+      <footer className="home-footer">
+
+        <div>
+          <strong>Shivam Online Hub</strong>
+          <span>Jan Suvidha Kendra</span>
+        </div>
+
+        <div>
+          © {new Date().getFullYear()} Shivam Online Hub
+        </div>
+
+      </footer>
+
+    </main>
   );
 }
