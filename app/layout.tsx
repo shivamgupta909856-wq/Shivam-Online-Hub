@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Shivam Online Hub is a Jan Suvidha Kendra providing online forms, government services, Aadhaar, PAN Card, bill payment, railway and digital services.",
 verification: {
-  google: "Gdut-7inDJRBA0g52ITW37yVUltkvj7E8LQzGha-U8",
+  google: "2Gdut-7inDJRBA0g52ITW37yVUltkvj7E8LQzGha-U8",
 },
   keywords: [
     "Shivam Online Hub",
