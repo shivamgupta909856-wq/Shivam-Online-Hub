@@ -117,7 +117,7 @@ export default function Home() {
           <div className="hero-orb">
             <div className="orb-inner">
               <img
-                src="/logo2.png"
+                src="/logo2.webp"
                 alt="Shivam Online Hub"
               />
             </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
           onClick={closeMenu}
         >
           <img
-            src="/logo2.png"
+            src="/logo2.webp"
             alt="Shivam Online Hub"
           />
 
