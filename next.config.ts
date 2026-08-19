@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/shivam-online-hub",
+  basePath: "/Shivam-Online-Hub",
   images: {
     unoptimized: true,
   },
