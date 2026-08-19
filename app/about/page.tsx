@@ -1,5 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Shivam Online Hub Jan Suvidha Kendra and the online, government and digital services we provide.",
+};
 export default function AboutPage() {
   return (
     <div className="about-page">
