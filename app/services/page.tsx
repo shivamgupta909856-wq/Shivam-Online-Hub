@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 const services = [
@@ -7,50 +5,57 @@ const services = [
     icon: "🪪",
     title: "Aadhaar Services",
     description:
-      "Aadhaar related online services and application assistance.",
-    tags: ["Aadhaar", "Update", "Online"],
+      "Aadhaar related online services, update assistance and document guidance.",
+    tags: ["Aadhaar", "Update", "Documents"],
+    link: "/services/aadhaar",
   },
   {
     icon: "💳",
     title: "PAN Card Services",
     description:
-      "New PAN application, correction and other PAN related services.",
+      "New PAN application, correction and other PAN related online assistance.",
     tags: ["New PAN", "Correction", "Online"],
+    link: "/services/pan-card",
   },
   {
     icon: "📄",
     title: "Online Forms",
     description:
-      "Admission forms, vacancy forms, scholarship forms and other online applications.",
-    tags: ["Admission", "Jobs", "Scholarship"],
+      "Admission, scholarship, vacancy and other online application forms.",
+    tags: ["Admission", "Forms", "Scholarship"],
+    link: "/services/online-form",
   },
   {
-    icon: "🏠",
+    icon: "🏛️",
     title: "Government Services",
     description:
-      "Assistance with various government schemes and digital services.",
-    tags: ["Government", "Schemes", "Applications"],
+      "Government schemes, certificates, applications and other government services.",
+    tags: ["Government", "Schemes", "Certificates"],
+    link: "/services/government",
   },
   {
     icon: "🎓",
     title: "Education Services",
     description:
-      "Online admission, examination, scholarship and education related assistance.",
+      "Admission, examination, scholarship and other education related assistance.",
     tags: ["Admission", "Exam", "Scholarship"],
+    link: "/services/education",
   },
   {
     icon: "💼",
     title: "Job & Vacancy Forms",
     description:
-      "Online application assistance for government and private job opportunities.",
-    tags: ["Vacancy", "Recruitment", "Forms"],
+      "Government and private job vacancy forms and online application assistance.",
+    tags: ["Jobs", "Vacancy", "Recruitment"],
+    link: "/services/job-vacancy",
   },
   {
     icon: "🚆",
     title: "Railway Services",
     description:
-      "Railway ticket booking assistance and other online railway services.",
+      "Railway ticket booking assistance and other available railway services.",
     tags: ["Railway", "Ticket", "Travel"],
+    link: "/services/railway",
   },
   {
     icon: "💡",
@@ -58,6 +63,7 @@ const services = [
     description:
       "Electricity, mobile and other online bill payment assistance.",
     tags: ["Electricity", "Mobile", "Bills"],
+    link: "/services/bill-payment",
   },
   {
     icon: "🖨️",
@@ -65,6 +71,7 @@ const services = [
     description:
       "Printing, scanning, document preparation and other digital services.",
     tags: ["Print", "Scan", "Documents"],
+    link: "/services/digital-print",
   },
 ];
 
@@ -72,9 +79,7 @@ export default function ServicesPage() {
   return (
     <main className="services-page">
 
-      {/* HERO */}
       <section className="services-hero">
-
         <div className="services-badge">
           ⚡ DIGITAL SERVICES • ONLINE SOLUTIONS
         </div>
@@ -84,16 +89,12 @@ export default function ServicesPage() {
         </h1>
 
         <p>
-          Shivam Online Hub में आपको कई तरह की online,
-          digital और government service assistance एक ही जगह मिलती है।
+          Shivam Online Hub में आपको online, digital और
+          government service assistance एक ही जगह मिलती है।
         </p>
-
       </section>
 
-
-      {/* SERVICE GRID */}
       <section className="services-container">
-
         <div className="services-grid">
 
           {services.map((service, index) => (
@@ -121,25 +122,22 @@ export default function ServicesPage() {
               </div>
 
               <Link
-                href="/contact"
+                href={service.link}
                 className="service-action"
               >
-                Get Service <span>→</span>
+                <span>View Service</span>
+                <span>→</span>
               </Link>
 
             </div>
           ))}
 
         </div>
-
       </section>
 
-
-      {/* CTA */}
       <section className="services-cta">
 
         <div className="services-cta-content">
-
           <span>NEED HELP?</span>
 
           <h2>
@@ -149,9 +147,8 @@ export default function ServicesPage() {
 
           <p>
             किसी service के बारे में जानकारी चाहिए?
-            हमसे contact करें।
+            पहले service की details देखें और फिर हमसे contact करें।
           </p>
-
         </div>
 
         <Link
@@ -163,8 +160,6 @@ export default function ServicesPage() {
 
       </section>
 
-
-      {/* FOOTER */}
       <footer className="services-footer">
 
         <div>

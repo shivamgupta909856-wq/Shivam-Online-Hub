@@ -1,202 +1,457 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Learn about Shivam Online Hub Jan Suvidha Kendra and the online, government and digital services we provide.",
-};
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
-    <div className="about-page">
+    <main className="about-page">
 
-      <section className="about-hero">
+      {/* ================= PROFILE ================= */}
 
-        <p className="about-tag">
-          ABOUT US
-        </p>
+      <section className="about-profile">
 
-        <h1>
-          Shivam <span>Online Hub</span>
-        </h1>
+        <div className="about-photo-wrap">
+          <div className="about-photo-glow"></div>
 
-        <p className="about-subtitle">
-          Your trusted destination for
-          government, digital and online
-          assistance under one roof.
-        </p>
+          <div className="about-photo">
+            <img
+              src="/shivam-gupta.jpg"
+              alt="Shivam Gupta"
+            />
+          </div>
+        </div>
+
+
+        <div className="about-intro">
+
+          <span className="about-badge">
+            👋 ABOUT THE FOUNDER
+          </span>
+
+          <p className="about-small">
+            SHIVAM ONLINE HUB
+          </p>
+
+          <h1>
+            Hi, I'm <span>Shivam Gupta</span>
+          </h1>
+
+          <h2>
+            Founder & Digital Service Provider
+          </h2>
+
+          <p className="about-description">
+  I enjoy working with online and digital services.
+  With this interest, I started
+  <strong> Shivam Online Hub </strong>
+  in July 2026 to provide reliable digital assistance
+  and useful online services at one place.
+</p>
+
+<p className="about-description">
+  My goal is to make online work easier for people
+  by providing the right information, simple guidance
+  and trusted assistance for various digital,
+  government and online services.
+</p>
+
+          <div className="about-buttons">
+
+            <Link
+              href="/services"
+              className="about-primary-btn"
+            >
+              Hamari Services →
+            </Link>
+
+            <Link
+              href="/contact"
+              className="about-secondary-btn"
+            >
+              Contact Me
+            </Link>
+
+          </div>
+
+        </div>
 
       </section>
 
-      <section className="about-section">
 
-        <div className="about-card">
+      {/* ================= EDUCATION ================= */}
 
-          <div className="about-icon">
-            🏢
-          </div>
+      <section className="about-education">
+
+        <div className="about-section-title">
+
+          <span>
+            MY EDUCATION
+          </span>
 
           <h2>
-            Who We Are
+            Education & <strong>Journey</strong>
           </h2>
 
           <p>
-            Shivam Online Hub is a digital
-            service center providing convenient
-            assistance for various government
-            and online services.
-          </p>
-
-          <p>
-            Our goal is to make online work
-            simple, fast and accessible for
-            everyone.
+            Meri education journey ne mujhe technical
+            knowledge ke saath digital field mein kaam
+            karne ka confidence diya.
           </p>
 
         </div>
 
-        <div className="about-card">
 
-          <div className="about-icon">
-            🎯
+        <div className="education-card">
+
+          <div className="education-icon">
+            🎓
           </div>
 
+          <div>
+
+            <span className="education-label">
+              DIPLOMA
+            </span>
+
+            <h3>
+              Diploma in Electrical Engineering
+            </h3>
+
+            <p>
+              SRIT Jabalpur
+            </p>
+
+            <small>
+              Technical Education • Jabalpur
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div className="education-card">
+
+          <div className="education-icon">
+            📚
+          </div>
+
+          <div>
+
+            <span className="education-label">
+              12TH STANDARD
+            </span>
+
+            <h3>
+              Higher Secondary • Biology
+            </h3>
+
+            <p>
+              Class 12th with Biology
+            </p>
+
+            <small>
+              Higher Secondary Education
+            </small>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= SHIVAM ONLINE HUB ================= */}
+
+      <section className="about-hub">
+
+        <div className="about-section-title">
+
+          <span>
+            OUR STORY
+          </span>
+
           <h2>
-            Our Mission
+            What is <strong>Shivam Online Hub?</strong>
           </h2>
 
           <p>
-            We aim to provide reliable digital
-            assistance from a single place so
-            customers can complete their online
-            work conveniently.
+            Shivam Online Hub ek Jan Suvidha Kendra hai
+            jahan customers ko different online,
+            digital aur government services ki
+            assistance ek hi jagah milti hai.
           </p>
+
+        </div>
+
+
+        <div className="about-hub-grid">
+
+          <div className="about-info-card">
+
+            <div>
+              💻
+            </div>
+
+            <h3>
+              Digital Services
+            </h3>
+
+            <p>
+              Online aur digital kaam ko easy banane
+              ke liye different services ki assistance
+              provide ki jaati hai.
+            </p>
+
+          </div>
+
+
+          <div className="about-info-card">
+
+            <div>
+              🤝
+            </div>
+
+            <h3>
+              Trusted Assistance
+            </h3>
+
+            <p>
+              Customer ko unke kaam se related
+              sahi information aur simple guidance
+              dene ka poora effort kiya jata hai.
+            </p>
+
+          </div>
+
+
+          <div className="about-info-card">
+
+            <div>
+              💰
+            </div>
+
+            <h3>
+              Affordable Service
+            </h3>
+
+            <p>
+              Hamara aim hai ki kaam ko reasonable
+              aur kam charges mein complete karne
+              ki koshish ki jaye.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= WHY CHOOSE US ================= */}
+
+      <section className="about-why">
+
+        <div className="about-section-title">
+
+          <span>
+            WHY SHIVAM ONLINE HUB?
+          </span>
+
+          <h2>
+            Why People <strong>Choose Us</strong>
+          </h2>
+
+        </div>
+
+
+        <div className="why-about-grid">
+
+          <div>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Sabhi Services Ek Jagah
+            </h3>
+
+            <p>
+              Different online kaam ke liye
+              alag-alag jagah jaane ki zarurat
+              kam hoti hai.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Sahi Information
+            </h3>
+
+            <p>
+              Customer ko unke kaam se related
+              useful aur clear information dene
+              ki koshish ki jaati hai.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Kam Charges
+            </h3>
+
+            <p>
+              Services ko reasonable aur
+              affordable charges mein provide
+              karne ka effort hota hai.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Easy Process
+            </h3>
+
+            <p>
+              Online kaam ki process ko simple
+              aur easy-to-understand banane
+              ki koshish ki jaati hai.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= TRUST MESSAGE ================= */}
+
+      <section className="about-trust">
+
+        <div className="trust-icon">
+          🤝
+        </div>
+
+
+        <div>
+
+          <span>
+            OUR PROMISE
+          </span>
+
+          <h2>
+            Aapka Kaam,
+            <strong> Hamari Responsibility.</strong>
+          </h2>
 
           <p>
-            Simple process, helpful guidance
-            and customer-friendly service are
-            our priorities.
+            Hamara main purpose hai ki jab koi
+            customer Shivam Online Hub par aaye,
+            to use apne online kaam ke liye
+            proper guidance aur assistance mile.
+          </p>
+
+          <blockquote>
+            "Yahan bharose ke saath apna online
+            kaam karwaya ja sakta hai."
+          </blockquote>
+
+          <p>
+            Hum chahte hain ki customer ko apne
+            kaam ke liye unnecessary jagah-jagah
+            na bhatakna pade.
           </p>
 
         </div>
 
       </section>
 
-      <section className="about-services">
+
+      {/* ================= FINAL CTA ================= */}
+
+      <section className="about-final-cta">
+
+        <span>
+          NEED ONLINE SERVICE?
+        </span>
 
         <h2>
-          What We Help With
+          Apne Kaam Ke Liye
+          <strong> Humse Contact Karein.</strong>
         </h2>
-
-        <div className="about-service-grid">
-
-          <div className="mini-service">
-            <span>🪪</span>
-            <h3>Aadhaar</h3>
-            <p>
-              Aadhaar related online assistance.
-            </p>
-          </div>
-
-          <div className="mini-service">
-            <span>💳</span>
-            <h3>PAN Card</h3>
-            <p>
-              PAN application and correction assistance.
-            </p>
-          </div>
-
-          <div className="mini-service">
-            <span>📄</span>
-            <h3>Online Forms</h3>
-            <p>
-              Admission and vacancy forms.
-            </p>
-          </div>
-
-          <div className="mini-service">
-            <span>🚆</span>
-            <h3>Railway</h3>
-            <p>
-              Railway ticket booking assistance.
-            </p>
-          </div>
-
-          <div className="mini-service">
-            <span>🏦</span>
-            <h3>Banking</h3>
-            <p>
-              Digital banking assistance.
-            </p>
-          </div>
-
-          <div className="mini-service">
-            <span>📜</span>
-            <h3>Certificates</h3>
-            <p>
-              Online certificate application assistance.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section className="why-us">
-
-        <h2>
-          Why Choose Us?
-        </h2>
-
-        <div className="why-grid">
-
-          <div>
-            <strong>01</strong>
-            <h3>Easy Process</h3>
-            <p>
-              Simple and easy online assistance.
-            </p>
-          </div>
-
-          <div>
-            <strong>02</strong>
-            <h3>Convenient</h3>
-            <p>
-              Multiple digital services at one place.
-            </p>
-          </div>
-
-          <div>
-            <strong>03</strong>
-            <h3>Helpful Support</h3>
-            <p>
-              Guidance whenever you need assistance.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section className="about-cta">
 
         <p>
-          HAVE A DIGITAL WORK?
+          Kisi service ki information chahiye?
+          Pehle hamari service details dekhein
+          aur phir humse contact karein.
         </p>
 
-        <h2>
-          Let's Get It Done.
-        </h2>
 
-        <Link
-          href="/contact"
-          className="primary-button"
-        >
-          Contact Us →
-        </Link>
+        <div>
+
+          <Link
+            href="/services"
+            className="about-cta-primary"
+          >
+            View Services
+          </Link>
+
+          <Link
+            href="/contact"
+            className="about-cta-secondary"
+          >
+            Contact Us →
+          </Link>
+
+        </div>
 
       </section>
 
-    </div>
+
+      {/* ================= FOOTER ================= */}
+
+      <footer className="about-footer">
+
+        <div>
+
+          <strong>
+            Shivam Online Hub
+          </strong>
+
+          <span>
+            Jan Suvidha Kendra
+          </span>
+
+        </div>
+
+        <p>
+          © {new Date().getFullYear()} Shivam Online Hub
+        </p>
+
+      </footer>
+
+    </main>
   );
 }
