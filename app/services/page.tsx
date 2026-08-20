@@ -85,12 +85,14 @@ export default function ServicesPage() {
         </div>
 
         <h1>
-          Our <span>Services</span>
+          Online <span>Services</span>
         </h1>
 
         <p>
-          Shivam Online Hub में आपको online, digital और
-          government service assistance एक ही जगह मिलती है।
+         Shivam Online Hub एक Jan Suvidha Kendra है जहाँ
+  Aadhaar, PAN Card, E-Shram Card, online forms,
+  government services, railway services, bill payment
+  और digital services की online assistance मिलती है।
         </p>
       </section>
 
@@ -159,19 +161,6 @@ export default function ServicesPage() {
         </Link>
 
       </section>
-
-      <footer className="services-footer">
-
-        <div>
-          <strong>Shivam Online Hub</strong>
-          <small>Jan Suvidha Kendra</small>
-        </div>
-
-        <span>
-          © {new Date().getFullYear()} Shivam Online Hub
-        </span>
-
-      </footer>
 
     </main>
   );
