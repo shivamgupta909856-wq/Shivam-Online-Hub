@@ -159,6 +159,37 @@ export default function AboutPage() {
         </div>
 
       </section>
+      <section>
+      
+      
+      <div className="education-card">
+
+          <div className="education-icon">
+            📚
+          </div>
+
+          <div>
+            <span className="education-label">
+              10TH STANDARD
+            </span>
+
+            <h3>
+              High  School • All
+            </h3>
+
+            <p>
+              Class 10th with All subjects
+            </p>
+
+            <small>
+              High School Education
+            </small>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
       {/* ================= SHIVAM ONLINE HUB ================= */}

@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://shivamgupta909856-wq.github.io/Shivam-Online-Hub/</loc>
+    <loc>https://shivamhub.in/</loc>
   </url>
+
+  <url>
+    <loc>https://shivamhub.in/about</loc>
+  </url>
+
+  <url>
+    <loc>https://shivamhub.in/services</loc>
+  </url>
+
+  <url>
+    <loc>https://shivamhub.in/contact</loc>
+  </url>
+
 </urlset>
