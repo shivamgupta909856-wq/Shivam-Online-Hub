@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import TechBackground from "./components/TechBackground";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shivamhub.in"),
+  metadataBase: new URL("https://shivam-online-hub-gdxf.vercel.app"),
 
   title: {
     default: "Shivam Online Hub | Jan Suvidha Kendra",
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://shivamhub.in",
+    canonical: "https://shivam-online-hub-gdxf.vercel.app",
   },
 
   openGraph: {
     title: "Shivam Online Hub | Jan Suvidha Kendra",
     description:
       "Shivam Online Hub - Online forms, government services, Aadhaar, PAN Card, E-Shram Card, bill payment and digital services.",
-    url: "https://shivamhub.in",
+    url: "https://shivam-online-hub-gdxf.vercel.app",
     siteName: "Shivam Online Hub",
     type: "website",
   },
