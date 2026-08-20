@@ -241,21 +241,6 @@ export default function Home() {
 
       </section>
 
-
-      {/* FOOTER */}
-      <footer className="home-footer">
-
-        <div>
-          <strong>Shivam Online Hub</strong>
-          <span>Jan Suvidha Kendra</span>
-        </div>
-
-        <div>
-          © {new Date().getFullYear()} Shivam Online Hub
-        </div>
-
-      </footer>
-
     </main>
   );
 }

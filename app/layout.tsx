@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import TechBackground from "./components/TechBackground";
-
+import Footer from "./components/Footer";
+import LoadingScreen from "./components/LoadingScreen";
 export const metadata: Metadata = {
   metadataBase: new URL("https://shivam-online-hub-gdxf.vercel.app"),
 
@@ -70,10 +71,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <LoadingScreen />
         <TechBackground />
         <Navbar />
 
         <main className="site-content">{children}</main>
+        <Footer />
       </body>
     </html>
   );
