@@ -10209,3 +10209,2440 @@ main.legal-page .legal-hero {
   letter-spacing: 0.3px;
   line-height: 1.3;
 }
+/* ===== MOBILE NAVBAR FIX ===== */
+
+.navbar-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 9999;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #111827;
+  border-radius: 3px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .navbar-toggle {
+    display: flex !important;
+    margin-left: auto;
+  }
+
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .navbar-toggle {
+    display: none !important;
+  }
+}
+/* =========================================================
+   SHIVAM ONLINE HUB - SERVICE DETAIL PAGES
+   Matching Premium Blue Theme
+   ========================================================= */
+
+.service-detail-page {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+
+/* ================= HERO ================= */
+
+.service-detail-hero {
+  position: relative;
+  text-align: center;
+  padding: 70px 20px 55px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(37, 99, 235, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(59, 130, 246, 0.08),
+      transparent 35%
+    );
+}
+
+.service-detail-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 42px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 30px rgba(37, 99, 235, 0.12);
+
+  animation: detailIconFloat 3s ease-in-out infinite;
+}
+
+.service-detail-badge {
+  display: inline-block;
+
+  padding: 7px 15px;
+  margin-bottom: 16px;
+
+  border-radius: 50px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.service-detail-hero h1 {
+  margin: 0;
+
+  font-size: clamp(36px, 6vw, 58px);
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  color: #111827;
+}
+
+.service-detail-hero h1 span {
+  color: #2563eb;
+}
+
+.service-detail-hero > p {
+  max-width: 700px;
+
+  margin: 18px auto 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+
+/* ================= CONTENT ================= */
+
+.service-detail-container {
+  width: min(1050px, calc(100% - 32px));
+
+  margin: 0 auto;
+}
+
+
+/* ================= CARDS ================= */
+
+.service-detail-card {
+  position: relative;
+
+  margin-top: 22px;
+
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(37, 99, 235, 0.08);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 8px 28px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 35px rgba(15, 23, 42, 0.09);
+}
+
+.service-detail-card h2 {
+  margin: 0 0 14px;
+
+  font-size: 23px;
+
+  font-weight: 750;
+
+  color: #111827;
+}
+
+.service-detail-card p {
+  margin: 0;
+
+  font-size: 15.5px;
+
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+
+/* ================= LIST ================= */
+
+.service-detail-card ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+
+  gap: 10px;
+}
+
+.service-detail-card li {
+  padding: 12px 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 12px;
+
+  font-size: 14.5px;
+
+  line-height: 1.5;
+
+  color: #374151;
+
+  transition: 0.25s ease;
+}
+
+.service-detail-card li:hover {
+  transform: translateX(4px);
+
+  background: #eff6ff;
+
+  border-color: rgba(37, 99, 235, 0.12);
+}
+
+
+/* ================= NOTE ================= */
+
+.service-note {
+  margin-top: 18px !important;
+
+  padding: 13px 15px;
+
+  border-left: 4px solid #2563eb;
+
+  border-radius: 9px;
+
+  background: #eff6ff;
+
+  color: #1e40af !important;
+
+  font-size: 14px !important;
+}
+
+
+/* ================= CTA ================= */
+
+.service-detail-cta {
+  margin-top: 28px;
+
+  padding: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #f8fbff
+    );
+
+  border: 1px solid rgba(37, 99, 235, 0.10);
+
+  box-shadow:
+    0 8px 25px rgba(37, 99, 235, 0.06);
+}
+
+.service-detail-cta > div {
+  flex: 1;
+}
+
+.service-detail-cta > div > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #2563eb;
+}
+
+.service-detail-cta h2 {
+  margin: 0;
+
+  font-size: clamp(23px, 4vw, 32px);
+
+  line-height: 1.3;
+
+  color: #111827;
+}
+
+.service-detail-cta h2 strong {
+  color: #2563eb;
+}
+
+.service-detail-cta p {
+  margin: 9px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= BUTTON ================= */
+
+.service-detail-cta .primary-btn {
+  flex-shrink: 0;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 22px;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-detail-cta .primary-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 22px rgba(37, 99, 235, 0.22);
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes detailIconFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .service-detail-hero {
+    padding: 50px 16px 40px;
+  }
+
+  .service-detail-icon {
+    width: 72px;
+    height: 72px;
+
+    font-size: 37px;
+
+    border-radius: 19px;
+  }
+
+  .service-detail-badge {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .service-detail-hero h1 {
+    font-size: 35px;
+  }
+
+  .service-detail-hero > p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .service-detail-container {
+    width: calc(100% - 24px);
+  }
+
+  .service-detail-card {
+    padding: 21px;
+
+    margin-top: 17px;
+
+    border-radius: 19px;
+  }
+
+  .service-detail-card h2 {
+    font-size: 20px;
+  }
+
+  .service-detail-card p {
+    font-size: 14px;
+  }
+
+  .service-detail-card li {
+    font-size: 13.5px;
+
+    padding: 11px 12px;
+  }
+
+  .service-detail-cta {
+    padding: 23px 19px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    border-radius: 20px;
+  }
+
+  .service-detail-cta h2 {
+    font-size: 23px;
+  }
+
+  .service-detail-cta .primary-btn {
+    width: 100%;
+  }
+}
+/* =========================================================
+   SHIVAM ONLINE HUB
+   SERVICE DETAIL PAGES - MATCHING DARK BLUE THEME
+   ========================================================= */
+
+.service-detail-page {
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+
+/* ================= SERVICE DETAIL HERO ================= */
+
+.service-detail-hero {
+  position: relative;
+  text-align: center;
+  padding: 75px 20px 60px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(20, 90, 180, 0.22),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(0, 210, 255, 0.10),
+      transparent 35%
+    );
+}
+
+.service-detail-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 45px;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 90, 180, 0.34),
+      rgba(4, 20, 50, 0.5)
+    );
+
+  border: 1px solid
+    rgba(90, 220, 255, 0.20);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 20px 55px rgba(0, 20, 80, 0.25);
+
+  animation: serviceDetailFloat 3s ease-in-out infinite;
+}
+
+.service-detail-badge {
+  display: inline-block;
+
+  padding: 8px 16px;
+  margin-bottom: 18px;
+
+  border-radius: 50px;
+
+  background: rgba(20, 120, 220, 0.16);
+
+  border: 1px solid
+    rgba(90, 220, 255, 0.18);
+
+  color: #5addff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.service-detail-hero h1 {
+  margin: 0;
+
+  font-size: clamp(38px, 6vw, 60px);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.service-detail-hero h1 span {
+  color: #5addff;
+}
+
+.service-detail-hero > p {
+  max-width: 720px;
+
+  margin: 20px auto 0;
+
+  color: rgba(225, 245, 255, 0.72);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ================= CONTENT ================= */
+
+.service-detail-container {
+  width: min(1050px, calc(100% - 32px));
+
+  margin: 0 auto;
+}
+
+
+/* ================= DETAIL CARDS ================= */
+
+.service-detail-card {
+  position: relative;
+
+  margin-top: 24px;
+
+  padding: 30px;
+
+  overflow: hidden;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 90, 180, 0.34),
+      rgba(4, 20, 50, 0.5)
+    );
+
+  border: 1px solid
+    rgba(90, 220, 255, 0.16);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 20px 55px rgba(0, 20, 80, 0.25);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(90, 220, 255, 0.30);
+
+  box-shadow:
+    0 25px 65px rgba(0, 20, 80, 0.34);
+}
+
+.service-detail-card h2 {
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+
+  font-weight: 750;
+}
+
+.service-detail-card p {
+  margin: 0;
+
+  color: rgba(225, 245, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* ================= LIST ================= */
+
+.service-detail-card ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+
+  gap: 11px;
+}
+
+.service-detail-card li {
+  padding: 13px 16px;
+
+  border-radius: 14px;
+
+  background:
+    rgba(5, 30, 65, 0.55);
+
+  border: 1px solid
+    rgba(90, 220, 255, 0.10);
+
+  color: rgba(235, 250, 255, 0.82);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.service-detail-card li:hover {
+  transform: translateX(5px);
+
+  background:
+    rgba(20, 90, 180, 0.28);
+
+  border-color:
+    rgba(90, 220, 255, 0.22);
+}
+
+
+/* ================= NOTE ================= */
+
+.service-note {
+  margin-top: 20px !important;
+
+  padding: 14px 17px;
+
+  border-left: 4px solid #5addff;
+
+  border-radius: 10px;
+
+  background:
+    rgba(20, 120, 220, 0.12);
+
+  color: #aeefff !important;
+}
+
+
+/* ================= CTA ================= */
+
+.service-detail-cta {
+  margin-top: 30px;
+
+  padding: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 90, 180, 0.38),
+      rgba(4, 20, 50, 0.55)
+    );
+
+  border: 1px solid
+    rgba(90, 220, 255, 0.18);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 20px 55px rgba(0, 20, 80, 0.25);
+}
+
+.service-detail-cta > div {
+  flex: 1;
+}
+
+.service-detail-cta > div > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #5addff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.service-detail-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(24px, 4vw, 34px);
+
+  line-height: 1.3;
+}
+
+.service-detail-cta h2 strong {
+  color: #5addff;
+}
+
+.service-detail-cta p {
+  margin: 10px 0 0;
+
+  color: rgba(225, 245, 255, 0.70);
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= CTA BUTTON ================= */
+
+.service-detail-cta .primary-btn {
+  flex-shrink: 0;
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0878d1,
+      #08bde8
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 170, 255, 0.25);
+
+  font-weight: 700;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-detail-cta .primary-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 190, 255, 0.35);
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes serviceDetailFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .service-detail-hero {
+    padding: 52px 16px 42px;
+  }
+
+  .service-detail-icon {
+    width: 74px;
+    height: 74px;
+
+    font-size: 38px;
+
+    border-radius: 21px;
+  }
+
+  .service-detail-hero h1 {
+    font-size: 36px;
+  }
+
+  .service-detail-hero > p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .service-detail-container {
+    width: calc(100% - 24px);
+  }
+
+  .service-detail-card {
+    padding: 22px;
+
+    margin-top: 18px;
+
+    border-radius: 22px;
+  }
+
+  .service-detail-card h2 {
+    font-size: 21px;
+  }
+
+  .service-detail-card p {
+    font-size: 14px;
+  }
+
+  .service-detail-card li {
+    font-size: 13.5px;
+
+    padding: 12px 13px;
+  }
+
+  .service-detail-cta {
+    padding: 24px 20px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    border-radius: 22px;
+  }
+
+  .service-detail-cta h2 {
+    font-size: 24px;
+  }
+
+  .service-detail-cta .primary-btn {
+    width: 100%;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 420px) {
+
+  .service-detail-hero {
+    padding: 42px 14px 35px;
+  }
+
+  .service-detail-hero h1 {
+    font-size: 31px;
+  }
+
+  .service-detail-card {
+    padding: 18px;
+  }
+
+  .service-detail-card h2 {
+    font-size: 19px;
+  }
+
+  .service-detail-card li {
+    font-size: 13px;
+  }
+
+  .service-detail-cta {
+    padding: 20px 16px;
+  }
+
+  .service-detail-cta h2 {
+    font-size: 21px;
+  }
+}
+/* =========================================================
+   SHIVAM ONLINE HUB
+   FULL WEBSITE ANIMATION PACK
+   HOME + SERVICES + ABOUT + CONTACT
+   ========================================================= */
+
+
+/* ================= GLOBAL ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* ================= PAGE FADE ================= */
+
+.home-page,
+.services-page,
+.about-page,
+.contact-page,
+.service-detail-page {
+  animation: pageEnter 0.8s ease both;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+
+/* HERO */
+
+.hero-content {
+  animation:
+    homeHeroText 0.9s ease both;
+}
+
+@keyframes homeHeroText {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+  animation:
+    homeHeroVisual 1s ease 0.15s both;
+}
+
+@keyframes homeHeroVisual {
+  from {
+    opacity: 0;
+    transform: translateX(35px) scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+
+/* HERO ORB */
+
+.hero-orb {
+  animation:
+    homeOrbFloat 4s ease-in-out infinite,
+    homeOrbGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes homeOrbFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-13px);
+  }
+}
+
+@keyframes homeOrbGlow {
+  from {
+    filter:
+      drop-shadow(0 0 8px rgba(90, 220, 255, 0.20));
+  }
+
+  to {
+    filter:
+      drop-shadow(0 0 30px rgba(90, 220, 255, 0.55));
+  }
+}
+
+
+/* FLOATING CARDS */
+
+.floating-card {
+  animation:
+    homeFloatingCard 4s ease-in-out infinite;
+}
+
+.card-one {
+  animation-delay: 0s;
+}
+
+.card-two {
+  animation-delay: 0.8s;
+}
+
+.card-three {
+  animation-delay: 1.5s;
+}
+
+@keyframes homeFloatingCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-buttons .primary-btn:hover,
+.hero-buttons .secondary-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+
+  box-shadow:
+    0 15px 35px rgba(0, 180, 255, 0.25);
+}
+
+
+/* STATS */
+
+.hero-stats > div {
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.hero-stats > div:hover {
+  transform: translateY(-6px);
+}
+
+.hero-stats strong {
+  transition:
+    text-shadow 0.3s ease;
+}
+
+.hero-stats > div:hover strong {
+  text-shadow:
+    0 0 18px rgba(90, 220, 255, 0.45);
+}
+
+
+/* HOME SERVICE CARDS */
+
+.home-service-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.home-service-card:hover {
+  transform:
+    translateY(-10px)
+    scale(1.02);
+
+  box-shadow:
+    0 25px 60px rgba(0, 20, 80, 0.35);
+}
+
+
+/* SERVICE ICON */
+
+.home-service-card .service-icon {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.home-service-card:hover .service-icon {
+  transform:
+    scale(1.15)
+    rotate(-7deg);
+
+  filter:
+    drop-shadow(
+      0 0 15px
+      rgba(90, 220, 255, 0.55)
+    );
+}
+
+
+/* VIEW ALL SERVICES */
+
+.services-button {
+  animation:
+    buttonFloat 3s ease-in-out infinite;
+}
+
+@keyframes buttonFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* WHY US */
+
+.why-home-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.why-home-card:hover {
+  transform:
+    translateY(-9px)
+    scale(1.02);
+
+  box-shadow:
+    0 25px 55px rgba(0, 20, 80, 0.32);
+}
+
+.why-home-card > div {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.why-home-card:hover > div {
+  transform:
+    scale(1.18)
+    rotate(8deg);
+
+  filter:
+    drop-shadow(
+      0 0 14px
+      rgba(90, 220, 255, 0.5)
+    );
+}
+
+
+/* HOME CTA */
+
+.home-cta {
+  animation:
+    homeCtaGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes homeCtaGlow {
+  from {
+    box-shadow:
+      0 15px 45px
+      rgba(0, 20, 80, 0.18);
+  }
+
+  to {
+    box-shadow:
+      0 20px 65px
+      rgba(0, 170, 255, 0.28);
+  }
+}
+
+
+/* =========================================================
+   SERVICES PAGE
+   ========================================================= */
+
+
+/* HERO */
+
+.services-hero {
+  animation:
+    servicesHeroIn 0.9s ease both;
+}
+
+@keyframes servicesHeroIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* SERVICE BADGE */
+
+.services-badge {
+  animation:
+    servicesBadgeGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes servicesBadgeGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 rgba(90, 220, 255, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px
+      rgba(90, 220, 255, 0.20);
+  }
+}
+
+
+/* PREMIUM SERVICE CARDS */
+
+.service-premium-card {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.service-premium-card:hover {
+  transform:
+    translateY(-11px)
+    scale(1.015);
+
+  border-color:
+    rgba(90, 220, 255, 0.38);
+
+  box-shadow:
+    0 30px 70px
+    rgba(0, 20, 80, 0.40);
+}
+
+
+/* SERVICE BIG ICON */
+
+.service-big-icon {
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.service-premium-card:hover .service-big-icon {
+  transform:
+    scale(1.15)
+    rotate(-6deg);
+
+  filter:
+    drop-shadow(
+      0 0 18px
+      rgba(90, 220, 255, 0.50)
+    );
+}
+
+
+/* NUMBER */
+
+.service-number {
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+}
+
+.service-premium-card:hover .service-number {
+  transform:
+    translateX(5px);
+
+  color:
+    #5addff;
+}
+
+
+/* TAGS */
+
+.service-tags span {
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-tags span:hover {
+  transform:
+    translateY(-4px);
+
+  background:
+    rgba(90, 220, 255, 0.13);
+
+  border-color:
+    rgba(90, 220, 255, 0.30);
+}
+
+
+/* VIEW SERVICE */
+
+.service-action {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.service-action:hover {
+  transform:
+    translateX(7px);
+
+  color:
+    #5addff;
+}
+
+
+/* SERVICES CTA */
+
+.services-cta {
+  animation:
+    servicesCtaGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes servicesCtaGlow {
+  from {
+    box-shadow:
+      0 15px 45px
+      rgba(0, 20, 80, 0.18);
+  }
+
+  to {
+    box-shadow:
+      0 20px 65px
+      rgba(0, 170, 255, 0.25);
+  }
+}
+
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+
+/* ABOUT HERO */
+
+.about-hero {
+  animation:
+    aboutHeroIn 0.9s ease both;
+}
+
+@keyframes aboutHeroIn {
+  from {
+    opacity: 0;
+    transform:
+      translateY(35px)
+      scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* ABOUT TAG */
+
+.about-tag {
+  animation:
+    aboutTagPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes aboutTagPulse {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow:
+      0 0 15px
+      rgba(90, 220, 255, 0.45);
+  }
+}
+
+
+/* ABOUT CONTENT */
+
+.about-page section {
+  transition:
+    transform 0.4s ease;
+}
+
+
+/* ABOUT CARDS */
+
+.about-page [class*="card"] {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.about-page [class*="card"]:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0, 20, 80, 0.35);
+
+  border-color:
+    rgba(90, 220, 255, 0.28);
+}
+
+
+/* ABOUT ICONS */
+
+.about-page [class*="icon"] {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.about-page [class*="card"]:hover [class*="icon"] {
+  transform:
+    scale(1.15)
+    rotate(6deg);
+
+  filter:
+    drop-shadow(
+      0 0 15px
+      rgba(90, 220, 255, 0.5)
+    );
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+
+/* CONTACT HERO */
+
+.contact-page > section:first-child {
+  animation:
+    contactHeroIn 0.9s ease both;
+}
+
+@keyframes contactHeroIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* CONTACT CARDS */
+
+.contact-page [class*="card"] {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.contact-page [class*="card"]:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0, 20, 80, 0.35);
+
+  border-color:
+    rgba(90, 220, 255, 0.30);
+}
+
+
+/* CONTACT ICON */
+
+.contact-page [class*="icon"] {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.contact-page [class*="card"]:hover [class*="icon"] {
+  transform:
+    scale(1.15)
+    rotate(-6deg);
+
+  filter:
+    drop-shadow(
+      0 0 15px
+      rgba(90, 220, 255, 0.55)
+    );
+}
+
+
+/* CONTACT LINKS */
+
+.contact-page a {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-page a:hover {
+  transform:
+    translateX(5px);
+
+  color:
+    #5addff;
+}
+
+
+/* FORM INPUTS */
+
+.contact-page input,
+.contact-page textarea,
+.contact-page select {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus,
+.contact-page select:focus {
+  transform:
+    translateY(-2px);
+
+  border-color:
+    rgba(90, 220, 255, 0.55);
+
+  box-shadow:
+    0 0 20px
+    rgba(0, 180, 255, 0.15);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar-logo img {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.navbar-logo:hover img {
+  transform:
+    scale(1.08)
+    rotate(-3deg);
+
+  filter:
+    drop-shadow(
+      0 0 14px
+      rgba(90, 220, 255, 0.50)
+    );
+}
+
+.navbar-menu a {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar-menu a:hover {
+  transform:
+    translateY(-2px);
+
+  color:
+    #5addff;
+}
+
+
+/* =========================================================
+   ALL BUTTONS
+   ========================================================= */
+
+button,
+.primary-btn,
+.secondary-btn,
+.service-action,
+.services-cta-button {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+button:hover,
+.primary-btn:hover,
+.secondary-btn:hover,
+.services-cta-button:hover {
+  transform:
+    translateY(-3px);
+}
+
+button:active,
+.primary-btn:active,
+.secondary-btn:active {
+  transform:
+    scale(0.96);
+}
+
+
+/* =========================================================
+   SERVICE DETAIL PAGES
+   ========================================================= */
+
+.service-detail-page {
+  animation:
+    detailPageIn 0.8s ease both;
+}
+
+@keyframes detailPageIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.service-detail-card {
+  animation:
+    detailCardIn 0.7s ease both;
+}
+
+@keyframes detailCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =========================================================
+   SHIVAM ONLINE HUB
+   ADVANCED SCROLL ANIMATION SYSTEM
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(55px) scale(0.96);
+
+  filter: blur(5px);
+
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+
+/* LEFT */
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-70px);
+  filter: blur(5px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s ease;
+}
+
+.reveal-left.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+
+/* RIGHT */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(70px);
+  filter: blur(5px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s ease;
+}
+
+.reveal-right.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+
+/* ZOOM */
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.75);
+
+  filter: blur(7px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.9s ease;
+}
+
+.reveal-zoom.reveal-visible {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+
+/* =========================================================
+   GLASS CARD ANIMATION
+   ========================================================= */
+
+.service-premium-card,
+.home-service-card,
+.why-home-card,
+.service-detail-card {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.service-premium-card:hover,
+.home-service-card:hover,
+.why-home-card:hover,
+.service-detail-card:hover {
+  transform: translateY(-12px) scale(1.025);
+
+  border-color:
+    rgba(90, 220, 255, 0.38);
+
+  box-shadow:
+    0 30px 75px rgba(0, 20, 80, 0.42);
+}
+
+
+/* =========================================================
+   CYAN GLOW
+   ========================================================= */
+
+.service-premium-card::before,
+.home-service-card::before,
+.service-detail-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -100px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(90, 220, 255, 0.13);
+
+  filter: blur(45px);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.service-premium-card:hover::before,
+.home-service-card:hover::before,
+.service-detail-card:hover::before {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+
+/* =========================================================
+   ICON ANIMATION
+   ========================================================= */
+
+.service-icon,
+.service-big-icon,
+.service-detail-icon {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.45s ease;
+}
+
+.service-premium-card:hover .service-big-icon,
+.home-service-card:hover .service-icon {
+  transform:
+    scale(1.2)
+    rotate(-8deg);
+
+  filter:
+    drop-shadow(
+      0 0 20px
+      rgba(90, 220, 255, 0.65)
+    );
+}
+
+
+/* =========================================================
+   HERO ORB
+   ========================================================= */
+
+.hero-orb {
+  animation:
+    premiumOrbFloat 4s ease-in-out infinite,
+    premiumOrbGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes premiumOrbFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-18px) rotate(3deg);
+  }
+}
+
+@keyframes premiumOrbGlow {
+  from {
+    filter:
+      drop-shadow(
+        0 0 8px
+        rgba(90, 220, 255, 0.25)
+      );
+  }
+
+  to {
+    filter:
+      drop-shadow(
+        0 0 35px
+        rgba(90, 220, 255, 0.65)
+      );
+  }
+}
+
+
+/* =========================================================
+   FLOATING HERO CARDS
+   ========================================================= */
+
+.floating-card {
+  animation:
+    premiumFloatingCard 3.8s ease-in-out infinite;
+}
+
+.card-one {
+  animation-delay: 0s;
+}
+
+.card-two {
+  animation-delay: 0.7s;
+}
+
+.card-three {
+  animation-delay: 1.4s;
+}
+
+@keyframes premiumFloatingCard {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-16px) rotate(1deg);
+  }
+}
+
+
+/* =========================================================
+   BADGE GLOW
+   ========================================================= */
+
+.hero-badge,
+.services-badge,
+.about-tag {
+  animation:
+    premiumBadgeGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes premiumBadgeGlow {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.3);
+
+    text-shadow:
+      0 0 18px
+      rgba(90, 220, 255, 0.55);
+  }
+}
+
+
+/* =========================================================
+   BUTTON ANIMATION
+   ========================================================= */
+
+.primary-btn,
+.secondary-btn,
+.services-cta-button,
+.service-action {
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+.primary-btn::after,
+.secondary-btn::after,
+.services-cta-button::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  transform: skewX(-20deg);
+
+  background:
+    rgba(255, 255, 255, 0.18);
+
+  transition:
+    left 0.6s ease;
+}
+
+.primary-btn:hover::after,
+.secondary-btn:hover::after,
+.services-cta-button:hover::after {
+  left: 140%;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.services-cta-button:hover {
+  transform: translateY(-5px) scale(1.03);
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 180, 255, 0.32);
+}
+
+
+/* =========================================================
+   CTA GLOW
+   ========================================================= */
+
+.home-cta,
+.services-cta,
+.service-detail-cta {
+  animation:
+    premiumCtaGlow 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes premiumCtaGlow {
+  from {
+    box-shadow:
+      0 15px 45px
+      rgba(0, 20, 80, 0.20);
+  }
+
+  to {
+    box-shadow:
+      0 20px 70px
+      rgba(0, 170, 255, 0.32);
+  }
+}
+
+
+/* =========================================================
+   NAVBAR LOGO
+   ========================================================= */
+
+.navbar-logo img {
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.navbar-logo:hover img {
+  transform:
+    scale(1.1)
+    rotate(-4deg);
+
+  filter:
+    drop-shadow(
+      0 0 18px
+      rgba(90, 220, 255, 0.65)
+    );
+}
+
+
+/* =========================================================
+   NAVBAR LINKS
+   ========================================================= */
+
+.navbar-menu a {
+  position: relative;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navbar-menu a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #5addff;
+
+  transform: translateX(-50%);
+
+  box-shadow:
+    0 0 10px
+    rgba(90, 220, 255, 0.65);
+
+  transition:
+    width 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #5addff;
+
+  transform: translateY(-3px);
+}
+
+.navbar-menu a:hover::after {
+  width: 70%;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.hero-stats strong {
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.hero-stats > div:hover strong {
+  transform: scale(1.12);
+
+  text-shadow:
+    0 0 20px
+    rgba(90, 220, 255, 0.60);
+}
+
+
+/* =========================================================
+   TAGS
+   ========================================================= */
+
+.service-tags span {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-tags span:hover {
+  transform: translateY(-5px) scale(1.04);
+
+  background:
+    rgba(90, 220, 255, 0.15);
+
+  border-color:
+    rgba(90, 220, 255, 0.35);
+}
+
+
+/* =========================================================
+   CONTACT INPUT GLOW
+   ========================================================= */
+
+.contact-page input,
+.contact-page textarea,
+.contact-page select {
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus,
+.contact-page select:focus {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(90, 220, 255, 0.55);
+
+  box-shadow:
+    0 0 25px
+    rgba(0, 180, 255, 0.18);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   SMOOTH MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .service-premium-card:hover,
+  .home-service-card:hover,
+  .why-home-card:hover,
+  .service-detail-card:hover {
+    transform:
+      translateY(-7px)
+      scale(1.01);
+  }
+
+  .floating-card {
+    animation-duration: 5s;
+  }
+
+  .hero-orb {
+    animation-duration: 5s;
+  }
+}
+/* =========================================================
+   HOME PAGE EXTRA ANIMATIONS
+   ========================================================= */
+
+.hero-animate {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.home-loaded .hero-animate {
+  animation: homeFadeUp 0.8s ease forwards;
+}
+
+.hero-title-animate {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.home-loaded .hero-title-animate {
+  animation: homeFadeUp 0.9s ease 0.15s forwards;
+}
+
+.hero-text-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.home-loaded .hero-text-animate {
+  animation: homeFadeUp 0.9s ease 0.3s forwards;
+}
+
+.hero-buttons-animate {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+.home-loaded .hero-buttons-animate {
+  animation: homeFadeUp 0.8s ease 0.45s forwards;
+}
+
+.hero-stats-animate {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.home-loaded .hero-stats-animate {
+  animation: homeFadeUp 0.8s ease 0.6s forwards;
+}
+
+@keyframes homeFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ================= SECTION REVEAL ================= */
+
+.home-section-reveal {
+  animation:
+    sectionReveal 0.9s ease both;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ================= SERVICE CARDS ================= */
+
+.service-scroll-card {
+  opacity: 0;
+  transform:
+    translateY(50px)
+    scale(0.94);
+
+  animation:
+    serviceCardAppear 0.8s ease forwards;
+}
+
+@keyframes serviceCardAppear {
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* ================= WHY CARDS ================= */
+
+.why-card-animate {
+  opacity: 0;
+  transform:
+    translateY(40px)
+    scale(0.95);
+
+  animation:
+    whyCardAppear 0.8s ease forwards;
+}
+
+@keyframes whyCardAppear {
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* ================= CTA ================= */
+
+.home-cta-animate {
+  animation:
+    homeCtaAppear 1s ease both,
+    premiumCtaGlow 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes homeCtaAppear {
+  from {
+    opacity: 0;
+    transform: translateY(45px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .service-scroll-card {
+    animation-duration: 0.65s;
+  }
+
+  .why-card-animate {
+    animation-duration: 0.65s;
+  }
+}
