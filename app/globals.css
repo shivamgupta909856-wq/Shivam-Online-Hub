@@ -12646,3 +12646,82 @@ button:active,
     animation-duration: 0.65s;
   }
 }
+/* MOBILE NAVBAR FIX */
+
+.navbar-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 9px;
+  border: 1px solid rgba(90, 220, 255, 0.35);
+  border-radius: 12px;
+  background: rgba(10, 35, 70, 0.8);
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 23px;
+  height: 2px;
+  border-radius: 5px;
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .navbar-toggle {
+    display: flex !important;
+  }
+
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .navbar-inner {
+    position: relative;
+  }
+
+}
+
+/* HAMBURGER → X */
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .mobile-menu.open {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+}
