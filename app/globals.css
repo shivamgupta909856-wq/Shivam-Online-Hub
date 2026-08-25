@@ -13249,13 +13249,13 @@ button:active,
   .navbar-toggle {
     display: flex !important;
 
-    width: 44px !important;
-    height: 44px !important;
+    width: 36px !important;
+    height: 36px !important;
 
-    min-width: 44px !important;
-    min-height: 44px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
 
-    padding: 8px !important;
+    padding: 6px !important;
     margin-left: auto !important;
 
     flex-direction: column !important;
@@ -13283,11 +13283,11 @@ button:active,
   .navbar-toggle span {
     display: block !important;
 
-    width: 23px !important;
-    height: 3px !important;
+    width: 20px !important;
+    height: 2px !important;
 
-    min-width: 23px !important;
-    min-height: 3px !important;
+    min-width: 20px !important;
+    min-height: 2px !important;
 
     background: #ffffff !important;
 
