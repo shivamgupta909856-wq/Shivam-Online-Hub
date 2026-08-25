@@ -13391,3 +13391,41 @@ button:active,
       scale(1);
   }
 }
+/* FINAL SMALL MOBILE MENU BUTTON */
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex !important;
+
+    width: 34px !important;
+    height: 34px !important;
+
+    min-width: 34px !important;
+    min-height: 34px !important;
+
+    max-width: 34px !important;
+    max-height: 34px !important;
+
+    padding: 5px !important;
+    margin-left: auto !important;
+
+    gap: 4px !important;
+
+    border-radius: 9px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .navbar-toggle span {
+    width: 19px !important;
+    height: 2px !important;
+
+    min-width: 19px !important;
+    min-height: 2px !important;
+
+    max-width: 19px !important;
+    max-height: 2px !important;
+
+    display: block !important;
+  }
+}
