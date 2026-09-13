@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import UpdatesSection from "@/components/UpdatesSection";
 
 const services = [
   {
@@ -190,7 +191,7 @@ export default function Home() {
 
       </section>
 
-
+<UpdatesSection />
       {/* SERVICES */}
       <section className="home-services">
 
@@ -202,8 +203,17 @@ export default function Home() {
             Our <strong>Popular Services</strong>
           </h2>
 
-          <p>
-            सभी जरूरी online और digital services एक ही जगह।
+          <p
+             style={{
+    letterSpacing: "normal",
+    wordSpacing: "normal",
+    whiteSpace: "normal",
+    maxWidth: "600px",
+    margin: "10px auto 0",
+    lineHeight: "1.6",
+  }}
+  >
+      सभी जरूरी online और digital services एक ही जगह।
           </p>
 
         </div>
