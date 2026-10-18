@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import TechBackground from "./components/TechBackground";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
+import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://shivam-online-hub-gdxf.vercel.app"),
 
@@ -77,6 +78,7 @@ export default function RootLayout({
 
         <main className="site-content">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
